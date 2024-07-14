@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import UserProfile from "./Components/userProfile"; // Import the UserProfile component
+import State from "./Components/count"; // Import the State component from count.jsx
+import Welcome from "./Components/hello"; // Import the Welcome component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Welcome name="John Doe" />
+      <br></br>
+      <br></br>
+      <UserProfile name="John Doe" age={23} email="john.doe@example.com" />
+      <br></br>
+      <br></br>
+      <State />
     </div>
   );
 }
