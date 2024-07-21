@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import KeyboardEvents from "./Components/Day 02/Components/KeyboardEvents";
+import FormEvents from "./Components/Day 02/Components/FormEvents";
 
 function App() {
   return (
     <div className="App">
-      <KeyboardEvents />
+      <FormEvents />
     </div>
   );
 }
