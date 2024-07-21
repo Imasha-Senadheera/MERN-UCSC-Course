@@ -31,6 +31,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { Button } from '../mystyles';
 
 const Body = styled.div`
   font-family: Arial, sans-serif;
@@ -52,6 +53,7 @@ const Heading = styled.h1`
 
 const Main = styled.main`
   padding: 20rem;
+  text-align: center; /* Center the content */
 `;
 
 const Footer = styled.footer`
@@ -73,7 +75,11 @@ const SimpleComponent = () => {
 
       <Main>
         <p>Welcome to my simple React component!</p>
+        <br></br>
         <p>This is an example of a React component with external CSS.</p>
+        <br></br>
+        <Button>Button 01</Button>
+        <Button>Button 02</Button>
       </Main>
 
       <Footer>
@@ -84,5 +90,3 @@ const SimpleComponent = () => {
 };
 
 export default SimpleComponent;
-
-

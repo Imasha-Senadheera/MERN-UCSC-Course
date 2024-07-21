@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  background-color: #ff85a2; /* Green background */
+  background-color: #333; 
   border: none; /* Remove borders */
   color: white; /* White text */
   padding: 15px 32px; /* Some padding */
@@ -16,7 +16,7 @@ export const Button = styled.button`
   transition: background-color 0.3s ease; /* Smooth transition for background-color */
 
   &:hover {
-    background-color: #ff5a7f; /* Darker green on hover */
+    background-color: #335; /* Darker green on hover */
   }
 
   &:focus {
@@ -24,6 +24,6 @@ export const Button = styled.button`
   }
 
   &:active {
-    background-color: #ff5a7f; /* Even darker green when clicked */
+    background-color: #335; /* Even darker green when clicked */
   }
 `;
