@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-import MyButton from "./Components/Day 02/Components/MyButton";
-
+import Image from "./Components/Day 02/Components/Image";
 
 function App() {
   return (
     <div className="App">
-      <MyButton />
+      <Image />
     </div>
   );
 }
