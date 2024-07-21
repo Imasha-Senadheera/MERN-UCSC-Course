@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Nesting from "./Components/Day 02/Components/Nesting";
+import MyButton from "./Components/Day 02/Components/MyButton";
 
 
 function App() {
   return (
     <div className="App">
-      <Nesting />
+      <MyButton />
     </div>
   );
 }
