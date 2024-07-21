@@ -19,6 +19,8 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
+import AddReactionIcon from "@mui/icons-material/AddReaction";
+import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 
 export default function MyButton() {
   return (
@@ -71,6 +73,8 @@ export default function MyButton() {
           Send
         </Button>
       </Stack>
+      <AddReactionIcon fontSize="large" /> <br></br>
+      <AirplanemodeActiveIcon fontSize="large" />
     </div>
   );
 }
