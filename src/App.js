@@ -1,13 +1,11 @@
 import React from "react";
 import "./App.css";
-import LandingPage from "./Components/Day 02/Components/LandingPage";
-import Navbar from "./Components/Day 02/Components/Navbar";
+import MouseEvents from "./Components/Day 02/Components/MouseEvents";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <LandingPage />
+      <MouseEvents />
     </div>
   );
 }
