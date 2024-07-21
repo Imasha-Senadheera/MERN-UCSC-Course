@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import Image from "./Components/Day 02/Components/Image";
+import LandingPage from "./Components/Day 02/Components/LandingPage";
+import Navbar from "./Components/Day 02/Components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Image />
+      <Navbar />
+      <LandingPage />
     </div>
   );
 }
