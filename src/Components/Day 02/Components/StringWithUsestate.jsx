@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function StringWithUsestate() {
+export default function StringWithUseState() {
   const [inputText, setInputText] = useState("");
   const [transformedText, setTransformedText] = useState("");
 

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import StringWithUsestate from "./Components/Day 02/Components/StringWithUsestate";
+import ArraysWithUseState from "./Components/Day 02/Components/ArraysWithUseState";
 
 function App() {
   return (
     <div className="App">
-      <StringWithUsestate />
+      <ArraysWithUseState />
     </div>
   );
 }
