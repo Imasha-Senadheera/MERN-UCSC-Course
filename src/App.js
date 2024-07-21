@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import MouseEvents from "./Components/Day 02/Components/MouseEvents";
+import KeyboardEvents from "./Components/Day 02/Components/KeyboardEvents";
 
 function App() {
   return (
     <div className="App">
-      <MouseEvents />
+      <KeyboardEvents />
     </div>
   );
 }
