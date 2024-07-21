@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css'; 
-import DynamicStyling from './Components/Day 02/Components/DynamicStyling';
+import React from "react";
+import "./App.css";
+import ThemeProvider from "./Components/Day 02/Components/ThemeProvider";
 
 function App() {
   return (
     <div className="App">
-      <DynamicStyling />
+      <ThemeProvider />
     </div>
   );
 }
