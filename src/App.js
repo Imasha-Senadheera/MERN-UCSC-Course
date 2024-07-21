@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import ThemeProvider from "./Components/Day 02/Components/ThemeProvider";
+import Nesting from "./Components/Day 02/Components/Nesting";
 
 
 function App() {
   return (
     <div className="App">
-      <ThemeProvider />
+      <Nesting />
     </div>
   );
 }
