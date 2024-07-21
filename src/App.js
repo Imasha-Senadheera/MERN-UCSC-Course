@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import FormEvents from "./Components/Day 02/Components/FormEvents";
+import StringWithUsestate from "./Components/Day 02/Components/StringWithUsestate";
 
 function App() {
   return (
     <div className="App">
-      <FormEvents />
+      <StringWithUsestate />
     </div>
   );
 }
