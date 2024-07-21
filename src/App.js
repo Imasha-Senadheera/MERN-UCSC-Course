@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './Components/Day 01/Navbar';
 import './App.css'; 
+import SimpleComponent from './Components/Day 02/SimpleComponent';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <SimpleComponent />
     </div>
   );
 }
