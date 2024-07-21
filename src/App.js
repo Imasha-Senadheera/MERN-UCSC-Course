@@ -1,9 +1,13 @@
-import "./App.css";
-import SimpleCard from './Components/SimpleCard';
+import React from 'react';
+import Navbar from './Components/Navbar';
+import './App.css'; 
 
 function App() {
-  return <SimpleCard/>
-  }
-  
+  return (
+    <div className="App">
+      <Navbar />
+    </div>
+  );
+}
 
 export default App;

@@ -1,0 +1,49 @@
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .view-more-btn {
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  

@@ -1,4 +1,3 @@
-// src/components/SimpleCard.js
 import React from "react";
 import "./SimpleCard.css";
 
