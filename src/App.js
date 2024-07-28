@@ -1,14 +1,11 @@
 import React from "react";
 import "./App.css";
-import { LanguageProvider } from "./Components/Day 03/Components/LanguageToggleBarActivity/LanguageContext";
-import LanguageComponent from "./Components/Day 03/Components/LanguageToggleBarActivity/LanguageComponent";
+import UncontrolledComponent from "./Components/Day 03/Components/ControlComponents/UncontrolledComponent";
 
 function App() {
   return (
     <div className="App">
-      <LanguageProvider>
-        <LanguageComponent />
-      </LanguageProvider>
+      <UncontrolledComponent/>
     </div>
   );
 }
