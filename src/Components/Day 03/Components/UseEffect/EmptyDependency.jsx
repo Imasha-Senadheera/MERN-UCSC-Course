@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../../styles/EmptyDependency.css';
 
 function EmptyDependency() {
   const [posts, setPosts] = useState([]);

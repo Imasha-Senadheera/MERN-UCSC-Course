@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import "../../styles/DependencyArray.css"; 
 
 export default function UseEffect() {
   const [count, setCount] = useState(0);
