@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import UncontrolledComponent from "./Components/Day 03/Components/ControlComponents/UncontrolledComponent";
+import Controlled_Seperate from "./Components/Day 03/Components/ControlComponents/Controlled_Seperate";
 
 function App() {
   return (
     <div className="App">
-      <UncontrolledComponent/>
+      <Controlled_Seperate/>
     </div>
   );
 }
