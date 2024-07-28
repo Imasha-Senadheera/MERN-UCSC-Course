@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import UseReducer from "./Components/Day 03/Components/OtherHooks/UseReducer";
+import ToDoApp from "./Components/Day 03/Components/ToDOAppActivity/ToDoApp";
 
 function App() {
   return (
     <div className="App">
-      <UseReducer />
+      <ToDoApp />
     </div>
   );
 }
