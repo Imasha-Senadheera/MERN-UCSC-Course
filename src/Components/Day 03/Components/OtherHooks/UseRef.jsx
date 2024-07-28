@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 export default function UseRef() {
   const inputRef = useRef(null); // Create a ref for the input element

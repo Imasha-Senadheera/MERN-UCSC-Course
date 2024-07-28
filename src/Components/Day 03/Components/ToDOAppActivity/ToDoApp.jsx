@@ -1,15 +1,17 @@
-import React, { useState, useRef, useEffect, useReducer } from 'react';
-import './ToDoApp.css';
+import React, { useState, useRef, useEffect, useReducer } from "react";
+import "./ToDoApp.css";
 
 const initialState = { items: [] };
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'ADD_ITEM':
+    case "ADD_ITEM":
       return { items: [...state.items, action.payload] };
-    case 'REMOVE_ITEM':
-      return { items: state.items.filter((item, index) => index !== action.payload) };
-    case 'CLEAR_ITEMS':
+    case "REMOVE_ITEM":
+      return {
+        items: state.items.filter((item, index) => index !== action.payload),
+      };
+    case "CLEAR_ITEMS":
       return { items: [] };
     default:
       return state;
@@ -18,7 +20,7 @@ const reducer = (state, action) => {
 
 export default function ToDoApp() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -28,9 +30,9 @@ export default function ToDoApp() {
   }, []);
 
   const addItem = () => {
-    if (inputValue.trim() !== '') {
-      dispatch({ type: 'ADD_ITEM', payload: inputValue });
-      setInputValue('');
+    if (inputValue.trim() !== "") {
+      dispatch({ type: "ADD_ITEM", payload: inputValue });
+      setInputValue("");
     }
   };
 
@@ -39,11 +41,11 @@ export default function ToDoApp() {
   };
 
   const removeItem = (index) => {
-    dispatch({ type: 'REMOVE_ITEM', payload: index });
+    dispatch({ type: "REMOVE_ITEM", payload: index });
   };
 
   const clearItems = () => {
-    dispatch({ type: 'CLEAR_ITEMS' });
+    dispatch({ type: "CLEAR_ITEMS" });
   };
 
   return (
@@ -64,7 +66,9 @@ export default function ToDoApp() {
           </li>
         ))}
       </ul>
-      {state.items.length > 0 && <button onClick={clearItems}>Clear All</button>}
+      {state.items.length > 0 && (
+        <button onClick={clearItems}>Clear All</button>
+      )}
     </div>
   );
 }

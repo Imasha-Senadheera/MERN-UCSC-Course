@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import UseLayoutEffect from "./Components/Day 03/Components/OtherHooks/UseLayoutEffect";
+import UseLayout from "./Components/Day 03/Components/OtherHooks/UseLayout";
 
 function App() {
   return (
     <div className="App">
-      <UseLayoutEffect />
+      <UseLayout />
     </div>
   );
 }

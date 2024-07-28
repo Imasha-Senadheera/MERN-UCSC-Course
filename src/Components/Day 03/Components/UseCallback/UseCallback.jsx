@@ -1,12 +1,12 @@
-import React, { useState, useCallback } from 'react';
-import ChildComponent from './ChildComponent'; // Import ChildComponent
+import React, { useState, useCallback } from "react";
+import ChildComponent from "./ChildComponent"; // Import ChildComponent
 
 export default function UseCallback() {
   const [count, setCount] = useState(0);
 
   const handleClick = useCallback(() => {
-    console.log('Button clicked');
-    setCount(prevCount => prevCount + 1);
+    console.log("Button clicked");
+    setCount((prevCount) => prevCount + 1);
   }, []);
 
   return (
@@ -17,7 +17,3 @@ export default function UseCallback() {
     </div>
   );
 }
-
-
-
-

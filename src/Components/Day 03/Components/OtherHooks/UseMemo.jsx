@@ -23,11 +23,10 @@
 //   );
 // }
 
-
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo } from "react";
 // Simulates an expensive calculation
 function expensiveCalculation(num) {
-  console.log('Calculating...');
+  console.log("Calculating...");
   // In a real-world scenario, this could be a more CPU-intensive task
   return num * 2;
 }
@@ -46,7 +45,9 @@ export default function UseMemo() {
       <p>Doubled Value: {doubledValue}</p>
       <button onClick={() => setNumber(number + 1)}>Increment Number</button>
       <p>Other State: {otherState}</p>
-      <button onClick={() => setOtherState(otherState + 1)}>Increment Other State</button>
+      <button onClick={() => setOtherState(otherState + 1)}>
+        Increment Other State
+      </button>
     </div>
   );
 }

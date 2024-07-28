@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 // // without callback
 // const ChildComponent = ({ onClick }) => {
@@ -7,8 +7,8 @@ import React from 'react';
 // };
 
 const ChildComponent = React.memo(({ onClick }) => {
-    console.log('ChildComponent rendered');
-    return <button onClick={onClick}>Click me!</button>;
+  console.log("ChildComponent rendered");
+  return <button onClick={onClick}>Click me!</button>;
 });
 
 export default ChildComponent;
