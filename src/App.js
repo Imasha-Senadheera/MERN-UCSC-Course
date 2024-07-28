@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
-import UseLayout from "./Components/Day 03/Components/OtherHooks/UseLayout";
+import { Parent } from "./Components/Day 03/Components/UseContext/Parent";
+import ChildComponent from "./Components/Day 03/Components/UseContext/ChildComponent";
 
 function App() {
   return (
     <div className="App">
-      <UseLayout />
+      <Parent>
+        <ChildComponent />
+      </Parent>
     </div>
   );
 }
