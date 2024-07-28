@@ -11,7 +11,7 @@ export default function UseRef() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <input ref={inputRef} type="text" placeholder="I'll be focused on load" />
     </div>
   );
