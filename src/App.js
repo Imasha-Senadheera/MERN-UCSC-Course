@@ -1,13 +1,11 @@
 import React from "react";
 import "./App.css";
-import Controlled_Seperate from "./Components/Day 03/Components/ControlComponents/Controlled_Seperate";
-import Controlled_Object from "./Components/Day 03/Components/ControlComponents/Controlled_Object";
+import FormValidation from "./Components/Day 03/Components/Validation/FormValidation";
 
 function App() {
   return (
     <div className="App">
-      <Controlled_Seperate />
-      <Controlled_Object />
+      <FormValidation />
     </div>
   );
 }
