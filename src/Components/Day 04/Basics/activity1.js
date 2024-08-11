@@ -1,32 +1,36 @@
 // Function to create a new bank account object
 function createBankAccount(ownerName, initialBalance) {
-  let account = {
-    ownerName: ownerName,
+  return {
+    ownerName,
     balance: initialBalance,
+
     // Method to deposit money into the account
-    deposit: function (amount) {
+    deposit(amount) {
       this.balance += amount;
       console.log(
-        `Deposit of $${amount} successful. New balance: $${this.balance}`
+        `Successfully deposited $${amount}. New balance: $${this.balance}`
       );
     },
+
     // Method to withdraw money from the account
-    withdraw: function (amount) {
+    withdraw(amount) {
       if (amount <= this.balance) {
         this.balance -= amount;
         console.log(
-          `Withdrawal of $${amount} successful. New balance: $${this.balance}`
+          `Successfully withdrew $${amount}. New balance: $${this.balance}`
         );
       } else {
-        console.log("Insufficient funds!");
+        console.log("Insufficient funds! Withdrawal declined.");
       }
     },
+
     // Method to check the balance
-    checkBalance: function () {
-      console.log(`Current balance for ${this.ownerName}: $${this.balance}`);
+    checkBalance() {
+      console.log(
+        `Account holder: ${this.ownerName}\nCurrent balance: $${this.balance}`
+      );
     },
   };
-  return account;
 }
 
 // Example usage
